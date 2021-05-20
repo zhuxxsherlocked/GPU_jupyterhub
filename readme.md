@@ -7,11 +7,10 @@ This jupyterhub implementation allows for Nvidia GPU access using the nvidia-doc
 - A cuda driver must be installed on the host system, you can check this by running `nvidia-smi` in the terminal.
 - Docker 18.09.5 or higher.
 - Docker compose 1.25.5 or higher.
-I've personally found the [DigitalOcean Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04) to be the most reliable. Make sure to change the version number to `1.25.5`!
 - The nvidia-container-runtime needs to be installed:
-```bash
-sudo apt-get install nvidia-container-runtime
-```
+    ```bash
+    sudo apt-get install nvidia-container-runtime
+    ```
 - Nvidia docker2 needs to be installed see their [Github](https://github.com/NVIDIA/nvidia-docker) for instructions.
 
 
@@ -64,7 +63,7 @@ docker-compose up --build
 
 Then run the following **from the root directory** of this repository:
 
-```
+```bash
 # bring down the JupyterHub container, if running
 docker-compose down
 
