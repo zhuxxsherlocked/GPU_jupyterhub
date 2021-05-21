@@ -63,3 +63,5 @@ RUN MPLBACKEND=Agg python -c "import matplotlib.pyplot" && \
     fix-permissions "/home/${NB_USER}"
 
 USER $NB_UID
+
+WORKDIR $HOME
